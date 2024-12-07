@@ -1,0 +1,84 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevents extra browser scrolling */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background and Layout */
+body {
+    background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 30px;
+    width: 90%; /* Ensures it fits smaller screens */
+    max-width: 1200px;
+    height: 80%; /* Container height */
+    overflow-y: auto; /* Makes the content scrollable */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Text and Image Styling */
+h1 {
+    color: #e63946;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+strong {
+    color: #1d3557;
+}
+
+.featured-image {
+    width: 100%;
+    max-width: 300px; /* Keeps the image manageable */
+    height: auto;
+    border-radius: 15px;
+    margin: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heart Animation */
+.heart {
+    font-size: 2rem;
+    animation: heartbeat 1.5s infinite;
+    margin: 20px 0;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
